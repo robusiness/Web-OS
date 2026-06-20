@@ -29,3 +29,36 @@ body {
     padding: 7px 15px;
     border-radius: 5px;
 }
+.homepage {
+    margin: 0px;
+    background-image: url('./sunflower-wallpaper.jpg');
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    height: 100vh;
+}
+.topBar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(20, 135, 255, 0.5);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    height: 2vh;
+    p {
+        padding: 0px 10px;
+    }
+}
+#welcomeWindow {
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 10px;
+    #welcomeWindowheader {
+        display: flex;
+        align-items: center;
+        background-color: #cacaca;
+        padding: 0px;
+        margin: -10px;
+        height: 3vh;
+    }
+}
