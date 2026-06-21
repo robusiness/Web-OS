@@ -10,6 +10,10 @@ function setTime() {
     let currentTime = new Date().toLocaleTimeString();
     document.getElementById('time').textContent = currentTime;
 }
+function setDate() {
+    let currentDate = new Date().toLocaleDateString();
+    document.getElementById('date').textContent = currentDate;
+}
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -51,12 +55,26 @@ function dragElement(elmnt) {
   }
 }
 function close() {
-    document.getElementById("welcomeWindow").style.display = "none";
+    document.getElementById("window").style.display = "none";
+}
+function close1() {
+    document.getElementById("window1").style.display = "none";
+}
+function open() {
+    document.getElementById("window1").style.display = "block";
+}
+function openWelcome() {
+    document.getElementById("window").style.display = "block";
 }
 
-welcomeWindowX.addEventListener("click", close);
+document.getElementById("windowX").addEventListener("click", close);
+document.getElementById("window1X").addEventListener("click", close1);
+document.getElementById("houseIcon").addEventListener("click", openWelcome);
+document.getElementById("calendarIcon").addEventListener("click", open);
 setInterval(setTime, 1000);
+setInterval(setDate, 1000);
 let fontSize = calculateFontSize(window.innerWidth, window.innerHeight);
-dragElement(document.getElementById("welcomeWindow"));
+dragElement(document.getElementById("window"));
+dragElement(document.getElementById("window1"));
 
 root.style.setProperty('--font-size', fontSize);
