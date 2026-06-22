@@ -4,7 +4,7 @@
 Here is the link:
 **[ROS](https://robusiness.github.io/ROS)**
 ---
-This project has
+This project has:
 - The current local time
 - The date
 - (A secret...)
