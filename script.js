@@ -67,7 +67,7 @@ function openWelcome() {
     document.getElementById("window").style.display = "block";
 }
 function secret() {
-    window.location.href = "./secret.html";
+    window.location.href = "./secret.html?cipherInput=";
 }
 
 document.getElementById("windowX").addEventListener("click", close);
